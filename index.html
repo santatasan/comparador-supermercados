@@ -27,6 +27,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -35,26 +36,33 @@
             color: #333;
             transition: background 0.3s;
         }
+
         body.dark-mode {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
         }
+
         body.dark-mode .container {
             background: #0f3460;
             color: #e4e4e4;
         }
+
         body.dark-mode .header {
             background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
         }
+
         body.dark-mode .tabs {
             background: #16213e;
             border-bottom-color: #1a1a2e;
         }
+
         body.dark-mode .tab {
             color: #a0a0a0;
         }
+
         body.dark-mode .tab.active {
             color: #667eea;
         }
+
         body.dark-mode input,
         body.dark-mode select,
         body.dark-mode .product-card,
@@ -65,12 +73,15 @@
             color: #e4e4e4;
             border-color: #1a1a2e;
         }
+
         body.dark-mode .price-row {
             background: #1a1a2e;
         }
+
         body.dark-mode label {
             color: #a0a0a0;
         }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -78,6 +89,7 @@
             min-height: 100vh;
             box-shadow: 0 0 40px rgba(0,0,0,0.1);
         }
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -86,14 +98,17 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: relative;
         }
+
         .header h1 {
             font-size: 24px;
             margin-bottom: 5px;
         }
+
         .header p {
             font-size: 14px;
             opacity: 0.9;
         }
+
         .dark-mode-toggle {
             position: absolute;
             top: 20px;
@@ -106,6 +121,7 @@
             cursor: pointer;
             font-size: 18px;
         }
+
         .tabs {
             display: flex;
             background: #f8f9fa;
@@ -115,6 +131,7 @@
             z-index: 100;
             overflow-x: auto;
         }
+
         .tab {
             flex: 1;
             min-width: 80px;
@@ -129,25 +146,31 @@
             transition: all 0.3s;
             white-space: nowrap;
         }
+
         .tab.active {
             color: #667eea;
             border-bottom: 3px solid #667eea;
         }
+
         .tab-content {
             display: none;
             padding: 20px;
             animation: fadeIn 0.3s;
         }
+
         .tab-content.active {
             display: block;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         label {
             display: block;
             margin-bottom: 5px;
@@ -155,6 +178,7 @@
             color: #495057;
             font-size: 14px;
         }
+
         input, select, textarea {
             width: 100%;
             padding: 12px;
@@ -163,17 +187,21 @@
             font-size: 16px;
             transition: border 0.3s;
         }
+
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: #667eea;
         }
+
         .search-box {
             position: relative;
             margin-bottom: 20px;
         }
+
         .search-box input {
             padding-left: 40px;
         }
+
         .search-icon {
             position: absolute;
             left: 12px;
@@ -182,6 +210,7 @@
             font-size: 18px;
             color: #6c757d;
         }
+
         .btn {
             width: 100%;
             padding: 14px;
@@ -195,15 +224,19 @@
             transition: transform 0.2s, box-shadow 0.2s;
             margin-top: 10px;
         }
+
         .btn:active {
             transform: scale(0.98);
         }
+
         .btn-secondary {
             background: linear-gradient(135deg, #20bf6b 0%, #26d07c 100%);
         }
+
         .btn-danger {
             background: linear-gradient(135deg, #eb3b5a 0%, #fc5c65 100%);
         }
+
         .btn-small {
             width: auto;
             padding: 8px 16px;
@@ -211,6 +244,7 @@
             display: inline-block;
             margin: 5px 5px 5px 0;
         }
+
         .product-card {
             background: white;
             border: 2px solid #e9ecef;
@@ -221,10 +255,12 @@
             transition: all 0.3s;
             position: relative;
         }
+
         .product-card:hover {
             border-color: #667eea;
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
         }
+
         .product-card.favorite::before {
             content: '⭐';
             position: absolute;
@@ -232,17 +268,20 @@
             right: 10px;
             font-size: 20px;
         }
+
         .product-name {
             font-weight: 600;
             font-size: 16px;
             color: #2d3436;
             margin-bottom: 8px;
         }
+
         .product-variant {
             font-size: 13px;
             color: #6c757d;
             margin-top: 4px;
         }
+
         .product-category {
             display: inline-block;
             background: #e3f2fd;
@@ -253,6 +292,7 @@
             font-weight: 600;
             margin-top: 6px;
         }
+
         .price-row {
             display: flex;
             justify-content: space-between;
@@ -262,31 +302,37 @@
             background: #f8f9fa;
             border-radius: 6px;
         }
+
         .supermarket-name {
             font-weight: 500;
             color: #495057;
             display: flex;
             align-items: center;
         }
+
         .price {
             font-weight: 700;
             color: #20bf6b;
             font-size: 18px;
         }
+
         .price.best {
             color: #20bf6b;
             background: #d4edda;
             padding: 4px 8px;
             border-radius: 4px;
         }
+
         .price.worst {
             color: #eb3b5a;
         }
+
         .price-per-unit {
             font-size: 11px;
             color: #6c757d;
             margin-top: 2px;
         }
+
         .chart-container {
             margin: 20px 0;
             background: white;
@@ -294,6 +340,7 @@
             border-radius: 12px;
             border: 2px solid #e9ecef;
         }
+
         .shopping-list-item {
             background: white;
             border: 2px solid #e9ecef;
@@ -301,11 +348,13 @@
             padding: 15px;
             margin-bottom: 10px;
         }
+
         .shopping-list-item input[type="number"] {
             width: 80px;
             padding: 8px;
             margin-left: 10px;
         }
+
         .optimization-result {
             background: linear-gradient(135deg, #20bf6b 0%, #26d07c 100%);
             color: white;
@@ -314,33 +363,39 @@
             margin: 20px 0;
             box-shadow: 0 4px 12px rgba(32, 191, 107, 0.3);
         }
+
         .optimization-result h3 {
             margin-bottom: 15px;
             font-size: 20px;
         }
+
         .optimization-item {
             background: rgba(255,255,255,0.2);
             padding: 12px;
             border-radius: 8px;
             margin-bottom: 10px;
         }
+
         .empty-state {
             text-align: center;
             padding: 40px 20px;
             color: #6c757d;
         }
+
         .empty-state svg {
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
             opacity: 0.5;
         }
+
         .stats-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
             margin-bottom: 20px;
         }
+
         .stat-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -348,25 +403,30 @@
             border-radius: 12px;
             text-align: center;
         }
+
         .stat-value {
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 5px;
         }
+
         .stat-label {
             font-size: 12px;
             opacity: 0.9;
         }
+
         .history-entry {
             display: flex;
             justify-content: space-between;
             padding: 10px;
             border-bottom: 1px solid #e9ecef;
         }
+
         .history-date {
             font-size: 12px;
             color: #6c757d;
         }
+
         .delete-btn {
             background: none;
             border: none;
@@ -375,6 +435,7 @@
             font-size: 18px;
             padding: 5px 10px;
         }
+
         .product-image {
             width: 50px;
             height: 50px;
@@ -383,6 +444,7 @@
             margin-right: 12px;
             border: 2px solid #e9ecef;
         }
+
         .supermarket-logo {
             width: 30px;
             height: 30px;
@@ -390,6 +452,7 @@
             border-radius: 4px;
             margin-right: 8px;
         }
+
         .image-preview {
             width: 100px;
             height: 100px;
@@ -397,6 +460,7 @@
             border-radius: 8px;
             border: 2px solid #e9ecef;
         }
+
         .no-image-placeholder {
             width: 50px;
             height: 50px;
@@ -408,6 +472,7 @@
             font-size: 24px;
             margin-right: 12px;
         }
+
         .edit-image-btn {
             padding: 6px 12px;
             background: #667eea;
@@ -418,6 +483,7 @@
             cursor: pointer;
             margin-top: 8px;
         }
+
         .modal {
             display: none;
             position: fixed;
@@ -430,9 +496,11 @@
             align-items: center;
             justify-content: center;
         }
+
         .modal.active {
             display: flex;
         }
+
         .modal-content {
             background: white;
             padding: 25px;
@@ -442,12 +510,14 @@
             max-height: 80vh;
             overflow-y: auto;
         }
+
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
         }
+
         .close-modal {
             background: none;
             border: none;
@@ -455,17 +525,20 @@
             cursor: pointer;
             color: #6c757d;
         }
+
         .scanner-container {
             position: relative;
             width: 100%;
             max-width: 400px;
             margin: 20px auto;
         }
+
         #scanner-video {
             width: 100%;
             border-radius: 12px;
             border: 3px solid #667eea;
         }
+
         .scanner-overlay {
             position: absolute;
             top: 50%;
@@ -477,6 +550,7 @@
             border-radius: 12px;
             pointer-events: none;
         }
+
         .scanner-line {
             position: absolute;
             width: 100%;
@@ -485,10 +559,12 @@
             top: 50%;
             animation: scannerMove 2s infinite;
         }
+
         @keyframes scannerMove {
             0%, 100% { top: 20%; }
             50% { top: 80%; }
         }
+
         .alert {
             padding: 12px 16px;
             border-radius: 8px;
@@ -498,26 +574,31 @@
             align-items: center;
             gap: 10px;
         }
+
         .alert-success {
             background: #d4edda;
             color: #155724;
             border: 1px solid #c3e6cb;
         }
+
         .alert-warning {
             background: #fff3cd;
             color: #856404;
             border: 1px solid #ffeaa7;
         }
+
         .alert-info {
             background: #d1ecf1;
             color: #0c5460;
             border: 1px solid #bee5eb;
         }
+
         .alert-danger {
             background: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
+
         .category-filter {
             display: flex;
             gap: 8px;
@@ -525,6 +606,7 @@
             overflow-x: auto;
             padding-bottom: 10px;
         }
+
         .category-chip {
             padding: 8px 16px;
             background: #e9ecef;
@@ -535,11 +617,13 @@
             font-size: 13px;
             transition: all 0.3s;
         }
+
         .category-chip.active {
             background: #667eea;
             color: white;
             border-color: #667eea;
         }
+
         .share-btn {
             padding: 10px 20px;
             background: #25D366;
@@ -553,6 +637,7 @@
             gap: 8px;
             margin-top: 10px;
         }
+
         .notes-section {
             margin-top: 15px;
             padding: 12px;
@@ -560,6 +645,7 @@
             border-radius: 8px;
             border-left: 4px solid #ffc107;
         }
+
         .notes-section textarea {
             width: 100%;
             min-height: 60px;
@@ -570,6 +656,7 @@
             font-size: 13px;
             resize: vertical;
         }
+
         .favorite-toggle {
             background: none;
             border: none;
@@ -579,9 +666,11 @@
             filter: grayscale(1);
             transition: filter 0.3s;
         }
+
         .favorite-toggle.active {
             filter: grayscale(0);
         }
+
         .savings-badge {
             display: inline-block;
             background: #20bf6b;
@@ -592,6 +681,7 @@
             font-weight: 600;
             margin-top: 10px;
         }
+
         .install-prompt {
             position: fixed;
             bottom: 20px;
@@ -609,13 +699,16 @@
             animation: slideUp 0.3s;
             max-width: 90%;
         }
+
         .install-prompt.show {
             display: flex;
         }
+
         @keyframes slideUp {
             from { bottom: -100px; opacity: 0; }
             to { bottom: 20px; opacity: 1; }
         }
+
         .install-prompt button {
             background: white;
             color: #667eea;
@@ -625,12 +718,14 @@
             font-weight: 600;
             cursor: pointer;
         }
+
         .install-prompt .close-install {
             background: rgba(255,255,255,0.2);
             color: white;
             padding: 5px 10px;
             font-size: 18px;
         }
+
         .gdrive-status {
             padding: 12px;
             background: #e3f2fd;
@@ -641,14 +736,17 @@
             gap: 10px;
             font-size: 14px;
         }
+
         .gdrive-status.connected {
             background: #d4edda;
             color: #155724;
         }
+
         .gdrive-status.disconnected {
             background: #fff3cd;
             color: #856404;
         }
+
         @media (max-width: 480px) {
             .stats-grid {
                 grid-template-columns: 1fr;
@@ -669,19 +767,22 @@
             <button onclick="installApp()">Instalar</button>
             <button class="close-install" onclick="closeInstallPrompt()">×</button>
         </div>
+
         <div class="header">
             <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
             <h1>🛒 Comparador de Supermercados Pro</h1>
             <p>Ahorra comprando inteligentemente</p>
         </div>
+
         <div class="tabs">
             <button class="tab active" onclick="switchTab('prices')">Precios</button>
-            <button class="tab" onclick="switchTab('scanner')">📷 Escáner</button>
+            <button class="tab" onclick="switchTab('scanner')">📷 Scanner</button>
             <button class="tab" onclick="switchTab('products')">Productos</button>
             <button class="tab" onclick="switchTab('shopping')">Lista</button>
             <button class="tab" onclick="switchTab('stats')">Stats</button>
             <button class="tab" onclick="switchTab('backup')">⚙️</button>
         </div>
+
         <!-- TAB: REGISTRAR PRECIOS -->
         <div id="prices-tab" class="tab-content active">
             <h2 style="margin-bottom: 20px;">Registrar Precio</h2>
@@ -691,36 +792,44 @@
                 <input type="text" id="price-product-search" placeholder="Buscar producto..." 
                        oninput="filterProductSelect('price-product-search', 'price-product')">
             </div>
+
             <div class="form-group">
                 <label>Producto</label>
                 <select id="price-product" onchange="loadLastPrices()">
                     <option value="">Selecciona un producto</option>
                 </select>
             </div>
+
             <div id="variant-selector" style="display: none;" class="form-group">
                 <label>Variante</label>
                 <select id="price-variant">
                     <option value="">Selecciona una variante</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label>Supermercado</label>
                 <select id="price-supermarket">
                     <option value="">Selecciona un supermercado</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label>Precio (€)</label>
                 <input type="number" id="price-amount" step="0.01" placeholder="2.50">
             </div>
+
             <div class="form-group">
                 <label>Fecha (opcional)</label>
                 <input type="date" id="price-date">
             </div>
+
             <button class="btn" onclick="addPrice()">Registrar Precio</button>
+
             <div id="price-alert-container"></div>
             <div id="last-prices-container" style="margin-top: 30px;"></div>
         </div>
+
         <!-- TAB: ESCÁNER -->
         <div id="scanner-tab" class="tab-content">
             <h2 style="margin-bottom: 20px;">📷 Escáner de Códigos</h2>
@@ -731,9 +840,12 @@
                     <div class="scanner-line"></div>
                 </div>
             </div>
+
             <button class="btn" id="start-scanner-btn" onclick="startScanner()">Iniciar Escáner</button>
             <button class="btn btn-danger" id="stop-scanner-btn" onclick="stopScanner()" style="display: none;">Detener Escáner</button>
+
             <div id="scanner-result" style="margin-top: 20px;"></div>
+
             <div style="margin-top: 30px; padding: 15px; background: #e3f2fd; border-radius: 8px;">
                 <h3 style="margin-bottom: 10px; font-size: 16px; color: #667eea;">💡 Cómo usar el escáner</h3>
                 <ul style="font-size: 13px; color: #495057; line-height: 1.8; padding-left: 20px;">
@@ -744,6 +856,7 @@
                 </ul>
             </div>
         </div>
+
         <!-- TAB: PRODUCTOS -->
         <div id="products-tab" class="tab-content">
             <h2 style="margin-bottom: 20px;">Gestionar Productos</h2>
@@ -752,6 +865,7 @@
                 <label>Nombre del Producto</label>
                 <input type="text" id="new-product" placeholder="Ej: Leche Pascual Entera">
             </div>
+
             <div class="form-group">
                 <label>Categoría</label>
                 <select id="product-category">
@@ -770,17 +884,20 @@
                     <option value="Otros">📦 Otros</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label>Foto del Producto (opcional)</label>
                 <input type="file" id="product-image" accept="image/*" onchange="previewImage('product-image', 'product-preview')">
                 <div id="product-preview" style="margin-top: 10px;"></div>
             </div>
+
             <div class="form-group">
                 <label>
                     <input type="checkbox" id="is-variant-product"> 
                     Es variante de un producto existente
                 </label>
             </div>
+
             <div id="variant-options" style="display: none;">
                 <div class="form-group">
                     <label>Producto Base</label>
@@ -788,26 +905,33 @@
                         <option value="">Selecciona el producto base</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label>Formato/Tamaño</label>
                     <input type="text" id="variant-format" placeholder="Ej: 1.5L, 500g, Pack 6 unidades">
                 </div>
+
                 <div class="form-group">
                     <label>Cantidad en unidades (para cálculo precio/unidad)</label>
                     <input type="number" id="variant-quantity" step="0.01" placeholder="Ej: 1.5 para 1.5L">
                 </div>
             </div>
+
             <button class="btn" onclick="addProduct()">Añadir Producto</button>
+
             <div class="form-group" style="margin-top: 30px;">
                 <label>Nuevo Supermercado</label>
                 <input type="text" id="new-supermarket" placeholder="Ej: Mercadona">
             </div>
+
             <div class="form-group">
                 <label>Logo del Supermercado (opcional)</label>
                 <input type="file" id="supermarket-logo" accept="image/*" onchange="previewImage('supermarket-logo', 'logo-preview')">
                 <div id="logo-preview" style="margin-top: 10px;"></div>
             </div>
+
             <button class="btn btn-secondary" onclick="addSupermarket()">Añadir Supermercado</button>
+
             <div style="margin-top: 40px;">
                 <h3 style="margin-bottom: 15px;">Mis Productos</h3>
                 
@@ -816,14 +940,18 @@
                     <input type="text" id="products-search" placeholder="Buscar productos..." 
                            oninput="filterProducts()">
                 </div>
+
                 <div class="category-filter" id="category-filter"></div>
+
                 <div id="products-list"></div>
             </div>
+
             <div style="margin-top: 30px;">
                 <h3 style="margin-bottom: 15px;">Mis Supermercados</h3>
                 <div id="supermarkets-list"></div>
             </div>
         </div>
+
         <!-- TAB: LISTA DE COMPRA -->
         <div id="shopping-tab" class="tab-content">
             <h2 style="margin-bottom: 20px;">Lista de la Compra</h2>
@@ -834,39 +962,50 @@
                     <option value="">Selecciona un producto</option>
                 </select>
             </div>
+
             <div id="shopping-variant-selector" style="display: none;" class="form-group">
                 <label>Variante</label>
                 <select id="shopping-variant">
                     <option value="">Selecciona una variante</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label>Cantidad</label>
                 <input type="number" id="shopping-quantity" value="1" min="1">
             </div>
+
             <button class="btn" onclick="addToShoppingList()">Añadir a la Lista</button>
+
             <div id="shopping-list-container" style="margin-top: 30px;"></div>
+
             <button class="btn btn-secondary" onclick="optimizeShoppingList()" style="margin-top: 20px;">
                 🎯 Optimizar Ahorro
             </button>
+
             <button class="share-btn" onclick="shareShoppingList()">
                 <span>📤</span> Compartir Lista
             </button>
+
             <div id="optimization-results"></div>
         </div>
+
         <!-- TAB: ESTADÍSTICAS -->
         <div id="stats-tab" class="tab-content">
             <h2 style="margin-bottom: 20px;">Estadísticas y Análisis</h2>
             
             <div id="total-savings" class="stats-grid"></div>
+
             <div class="form-group">
                 <label>Selecciona Producto para Ver Histórico</label>
                 <select id="stats-product" onchange="showProductStats()">
                     <option value="">Selecciona un producto</option>
                 </select>
             </div>
+
             <div id="stats-content"></div>
         </div>
+
         <!-- TAB: BACKUP Y CONFIGURACIÓN -->
         <div id="backup-tab" class="tab-content">
             <h2 style="margin-bottom: 20px;">⚙️ Configuración</h2>
@@ -875,6 +1014,7 @@
                 <h3 style="margin-bottom: 10px;">💾 Copia de Seguridad</h3>
                 <p style="font-size: 14px; opacity: 0.9;">Guarda tus datos para no perderlos nunca</p>
             </div>
+
             <div class="form-group">
                 <label>Exportar Datos</label>
                 <p style="font-size: 13px; color: #6c757d; margin-bottom: 10px;">
@@ -884,6 +1024,7 @@
                     📥 Descargar Backup
                 </button>
             </div>
+
             <div class="form-group" style="margin-top: 30px;">
                 <label>Importar Datos</label>
                 <p style="font-size: 13px; color: #6c757d; margin-bottom: 10px;">
@@ -894,6 +1035,7 @@
                     📤 Restaurar Backup
                 </button>
             </div>
+
             <div class="form-group" style="margin-top: 30px;">
                 <label>Sincronización en la Nube</label>
                 <p style="font-size: 13px; color: #6c757d; margin-bottom: 10px;">
@@ -929,6 +1071,7 @@
                     • Tus datos estarán disponibles en todos tus dispositivos
                 </div>
             </div>
+
             <div class="form-group" style="margin-top: 40px;">
                 <label style="color: #eb3b5a;">⚠️ Zona de Peligro</label>
                 <p style="font-size: 13px; color: #6c757d; margin-bottom: 10px;">
@@ -938,11 +1081,13 @@
                     🗑️ Borrar Todos los Datos
                 </button>
             </div>
+
             <div style="margin-top: 40px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                 <h3 style="margin-bottom: 15px; font-size: 16px;">📊 Información de Datos</h3>
                 <div id="data-info"></div>
             </div>
         </div>
+
         <!-- MODAL PARA DETALLES DE PRODUCTO -->
         <div id="product-modal" class="modal">
             <div class="modal-content">
@@ -953,6 +1098,7 @@
                 <div id="modal-product-content"></div>
             </div>
         </div>
+
         <!-- MODAL PARA ASOCIAR CÓDIGO DE BARRAS -->
         <div id="barcode-modal" class="modal">
             <div class="modal-content">
@@ -964,6 +1110,7 @@
             </div>
         </div>
     </div>
+
     <script>
         // Estructura de datos mejorada
         let data = {
@@ -978,14 +1125,16 @@
                 gdriveFileId: null
             }
         };
+
         let scannerCodeReader = null;
         let scannerStream = null;
         let deferredPrompt = null;
         let gapi = null;
         let tokenClient = null;
-        const GOOGLE_CLIENT_ID = '867382610207-nud7oqg350etg9k0op6njpjchuchu3o2.apps.googleusercontent.com';
+        const GOOGLE_CLIENT_ID = '867382610207-e6dkseb4bknifh7174a25134ggbo5icp.apps.googleusercontent.com';
         const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';
         const SCOPES = 'https://www.googleapis.com/auth/drive.file';
+
         // Cargar datos del localStorage
         function loadData() {
             const saved = localStorage.getItem('comparadorSupermercadosPro');
@@ -1053,10 +1202,12 @@
             saveData();
             updateAllLists();
         }
+
         // Guardar datos
         function saveData() {
             localStorage.setItem('comparadorSupermercadosPro', JSON.stringify(data));
         }
+
         // Cambiar de tab
         function switchTab(tabName) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -1074,17 +1225,20 @@
                 updateCategoryFilter();
             }
         }
+
         // Modo oscuro
         function toggleDarkMode() {
             data.settings.darkMode = !data.settings.darkMode;
             document.body.classList.toggle('dark-mode');
             saveData();
         }
+
         // FUNCIONES DE PRODUCTOS
         function previewImage(inputId, previewId) {
             const input = document.getElementById(inputId);
             const preview = document.getElementById(previewId);
             const file = input.files[0];
+
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
@@ -1095,6 +1249,7 @@
                 preview.innerHTML = '';
             }
         }
+
         document.getElementById('is-variant-product').addEventListener('change', function() {
             const variantOptions = document.getElementById('variant-options');
             const baseProductSelect = document.getElementById('base-product');
@@ -1110,6 +1265,7 @@
                 variantOptions.style.display = 'none';
             }
         });
+
         function addProduct() {
             const input = document.getElementById('new-product');
             const productName = input.value.trim();
@@ -1122,6 +1278,7 @@
                 showAlert('⚠️ Por favor escribe el nombre del producto', 'warning');
                 return;
             }
+
             if (isVariant) {
                 const baseProductName = document.getElementById('base-product').value;
                 const format = document.getElementById('variant-format').value.trim();
@@ -1131,11 +1288,13 @@
                     showAlert('⚠️ Por favor completa todos los campos de la variante', 'warning');
                     return;
                 }
+
                 const baseProduct = data.products.find(p => p.name === baseProductName);
                 if (!baseProduct) {
                     showAlert('⚠️ Producto base no encontrado', 'danger');
                     return;
                 }
+
                 baseProduct.variants.push({ format, quantity });
                 saveData();
                 updateAllLists();
@@ -1146,6 +1305,7 @@
                     showAlert('⚠️ Este producto ya existe', 'warning');
                     return;
                 }
+
                 const processProduct = (imageData) => {
                     data.products.push({ 
                         name: productName, 
@@ -1161,6 +1321,7 @@
                     resetProductForm();
                     showAlert('✅ Producto añadido correctamente', 'success');
                 };
+
                 if (imageInput.files.length > 0) {
                     const reader = new FileReader();
                     reader.onload = function(e) {
@@ -1172,6 +1333,7 @@
                 }
             }
         }
+
         function resetProductForm() {
             document.getElementById('new-product').value = '';
             document.getElementById('product-category').value = '';
@@ -1183,6 +1345,7 @@
             document.getElementById('variant-format').value = '';
             document.getElementById('variant-quantity').value = '';
         }
+
         function addSupermarket() {
             const input = document.getElementById('new-supermarket');
             const supermarketName = input.value.trim();
@@ -1192,10 +1355,12 @@
                 showAlert('⚠️ Por favor escribe el nombre del supermercado', 'warning');
                 return;
             }
+
             if (data.supermarkets.some(s => s.name === supermarketName)) {
                 showAlert('⚠️ Este supermercado ya existe', 'warning');
                 return;
             }
+
             const processSupermarket = (logoData) => {
                 data.supermarkets.push({ 
                     name: supermarketName, 
@@ -1208,6 +1373,7 @@
                 document.getElementById('logo-preview').innerHTML = '';
                 showAlert('✅ Supermercado añadido correctamente', 'success');
             };
+
             if (logoInput.files.length > 0) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
@@ -1218,6 +1384,7 @@
                 processSupermarket(null);
             }
         }
+
         function deleteProduct(productName) {
             if (confirm(`¿Eliminar "${productName}" y todos sus precios?`)) {
                 data.products = data.products.filter(p => p.name !== productName);
@@ -1232,18 +1399,23 @@
                 updateAllLists();
             }
         }
+
         function editProduct(productName) {
             const product = data.products.find(p => p.name === productName);
             if (!product) return;
+
             const modal = document.getElementById('product-modal');
             const content = document.getElementById('modal-product-content');
             const modalTitle = document.getElementById('modal-product-name');
+
             modalTitle.textContent = 'Editar Producto';
+
             let html = `
                 <div class="form-group">
                     <label>Nombre del Producto</label>
                     <input type="text" id="edit-product-name" value="${product.name}">
                 </div>
+
                 <div class="form-group">
                     <label>Categoría</label>
                     <select id="edit-product-category">
@@ -1262,47 +1434,58 @@
                         <option value="Otros" ${product.category === 'Otros' ? 'selected' : ''}>📦 Otros</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label>Imagen Actual</label>
                     ${product.image ? `<img src="${product.image}" class="image-preview">` : '<p style="color: #6c757d;">Sin imagen</p>'}
                 </div>
+
                 <div class="form-group">
                     <label>Cambiar Imagen (opcional)</label>
                     <input type="file" id="edit-product-image" accept="image/*">
                 </div>
+
                 <div class="form-group">
                     <label>
                         <input type="checkbox" id="edit-product-favorite" ${product.favorite ? 'checked' : ''}> 
                         Marcar como favorito
                     </label>
                 </div>
+
                 <div class="form-group">
                     <label>Notas</label>
                     <textarea id="edit-product-notes" style="width: 100%; min-height: 80px; padding: 10px; border: 2px solid #e9ecef; border-radius: 8px;">${product.notes || ''}</textarea>
                 </div>
+
                 <button class="btn" onclick="saveProductEdit('${productName}')">Guardar Cambios</button>
                 <button class="btn btn-danger" onclick="closeModal('product-modal')">Cancelar</button>
             `;
+
             content.innerHTML = html;
             modal.classList.add('active');
         }
+
         function saveProductEdit(oldProductName) {
             const product = data.products.find(p => p.name === oldProductName);
             if (!product) return;
+
             const newName = document.getElementById('edit-product-name').value.trim();
             const newCategory = document.getElementById('edit-product-category').value;
             const newFavorite = document.getElementById('edit-product-favorite').checked;
             const newNotes = document.getElementById('edit-product-notes').value;
             const imageInput = document.getElementById('edit-product-image');
+
             if (!newName) {
                 showAlert('⚠️ El nombre no puede estar vacío', 'warning');
                 return;
             }
+
             // Si cambió el nombre, verificar que no exista otro con ese nombre
             if (newName !== oldProductName && data.products.some(p => p.name === newName)) {
                 showAlert('⚠️ Ya existe un producto con ese nombre', 'warning');
                 return;
             }
+
             const updateProduct = (newImage) => {
                 // Actualizar el producto
                 product.name = newName;
@@ -1312,6 +1495,7 @@
                 if (newImage !== undefined) {
                     product.image = newImage;
                 }
+
                 // Si cambió el nombre, actualizar precios y códigos de barras
                 if (newName !== oldProductName) {
                     data.prices.forEach(p => {
@@ -1319,22 +1503,26 @@
                             p.product = newName;
                         }
                     });
+
                     data.shoppingList.forEach(item => {
                         if (item.product === oldProductName) {
                             item.product = newName;
                         }
                     });
+
                     for (let barcode in data.barcodes) {
                         if (data.barcodes[barcode].product === oldProductName) {
                             data.barcodes[barcode].product = newName;
                         }
                     }
                 }
+
                 saveData();
                 updateAllLists();
                 closeModal('product-modal');
                 showAlert('✅ Producto actualizado correctamente', 'success');
             };
+
             // Procesar imagen si se seleccionó una nueva
             if (imageInput.files.length > 0) {
                 const reader = new FileReader();
@@ -1346,52 +1534,66 @@
                 updateProduct();
             }
         }
+
         function editSupermarket(supermarketName) {
             const supermarket = data.supermarkets.find(s => s.name === supermarketName);
             if (!supermarket) return;
+
             const modal = document.getElementById('product-modal');
             const content = document.getElementById('modal-product-content');
             const modalTitle = document.getElementById('modal-product-name');
+
             modalTitle.textContent = 'Editar Supermercado';
+
             let html = `
                 <div class="form-group">
                     <label>Nombre del Supermercado</label>
                     <input type="text" id="edit-supermarket-name" value="${supermarket.name}">
                 </div>
+
                 <div class="form-group">
                     <label>Logo Actual</label>
                     ${supermarket.logo ? `<img src="${supermarket.logo}" class="image-preview">` : '<p style="color: #6c757d;">Sin logo</p>'}
                 </div>
+
                 <div class="form-group">
                     <label>Cambiar Logo (opcional)</label>
                     <input type="file" id="edit-supermarket-logo" accept="image/*">
                 </div>
+
                 <button class="btn" onclick="saveSupermarketEdit('${supermarketName}')">Guardar Cambios</button>
                 <button class="btn btn-danger" onclick="closeModal('product-modal')">Cancelar</button>
             `;
+
             content.innerHTML = html;
             modal.classList.add('active');
         }
+
         function saveSupermarketEdit(oldSupermarketName) {
             const supermarket = data.supermarkets.find(s => s.name === oldSupermarketName);
             if (!supermarket) return;
+
             const newName = document.getElementById('edit-supermarket-name').value.trim();
             const logoInput = document.getElementById('edit-supermarket-logo');
+
             if (!newName) {
                 showAlert('⚠️ El nombre no puede estar vacío', 'warning');
                 return;
             }
+
             // Si cambió el nombre, verificar que no exista otro con ese nombre
             if (newName !== oldSupermarketName && data.supermarkets.some(s => s.name === newName)) {
                 showAlert('⚠️ Ya existe un supermercado con ese nombre', 'warning');
                 return;
             }
+
             const updateSupermarket = (newLogo) => {
                 // Actualizar el supermercado
                 supermarket.name = newName;
                 if (newLogo !== undefined) {
                     supermarket.logo = newLogo;
                 }
+
                 // Si cambió el nombre, actualizar precios
                 if (newName !== oldSupermarketName) {
                     data.prices.forEach(p => {
@@ -1400,11 +1602,13 @@
                         }
                     });
                 }
+
                 saveData();
                 updateAllLists();
                 closeModal('product-modal');
                 showAlert('✅ Supermercado actualizado correctamente', 'success');
             };
+
             // Procesar logo si se seleccionó uno nuevo
             if (logoInput.files.length > 0) {
                 const reader = new FileReader();
@@ -1416,6 +1620,7 @@
                 updateSupermarket();
             }
         }
+
         function deleteSupermarket(supermarketName) {
             if (confirm(`¿Eliminar "${supermarketName}" y todos sus precios?`)) {
                 data.supermarkets = data.supermarkets.filter(s => s.name !== supermarketName);
@@ -1424,6 +1629,7 @@
                 updateAllLists();
             }
         }
+
         function deleteVariant(productName, variantFormat) {
             if (confirm(`¿Eliminar la variante "${variantFormat}"?`)) {
                 const product = data.products.find(p => p.name === productName);
@@ -1435,6 +1641,7 @@
                 }
             }
         }
+
         function toggleFavorite(productName) {
             const product = data.products.find(p => p.name === productName);
             if (product) {
@@ -1443,6 +1650,7 @@
                 updateAllLists();
             }
         }
+
         function saveProductNotes(productName) {
             const product = data.products.find(p => p.name === productName);
             const notesTextarea = document.getElementById(`notes-${productName.replace(/\s/g, '-')}`);
@@ -1452,6 +1660,7 @@
                 showAlert('📝 Notas guardadas', 'success');
             }
         }
+
         function editProductImage(productName) {
             const input = document.createElement('input');
             input.type = 'file';
@@ -1473,6 +1682,7 @@
             };
             input.click();
         }
+
         function editSupermarketLogo(supermarketName) {
             const input = document.createElement('input');
             input.type = 'file';
@@ -1494,6 +1704,7 @@
             };
             input.click();
         }
+
         // REGISTRAR PRECIOS
         function addPrice() {
             const productName = document.getElementById('price-product').value;
@@ -1503,23 +1714,28 @@
             const price = parseFloat(document.getElementById('price-amount').value);
             const dateInput = document.getElementById('price-date').value;
             const date = dateInput || new Date().toISOString().split('T')[0];
+
             if (!productName || !supermarket || !price || price <= 0) {
                 showAlert('⚠️ Por favor completa todos los campos', 'warning');
                 return;
             }
+
             const product = data.products.find(p => p.name === productName);
             if (product && product.variants.length > 0 && !variant) {
                 showAlert('⚠️ Por favor selecciona una variante', 'warning');
                 return;
             }
+
             // Verificar si hay cambio de precio
             const lastPrices = data.prices
                 .filter(p => p.product === productName && p.variant === variant && p.supermarket === supermarket)
                 .sort((a, b) => new Date(b.date) - new Date(a.date));
+
             if (lastPrices.length > 0) {
                 const lastPrice = lastPrices[0].price;
                 const difference = price - lastPrice;
                 const percentChange = ((difference / lastPrice) * 100).toFixed(1);
+
                 if (difference > 0) {
                     showAlert(`📈 Precio SUBIÓ ${difference.toFixed(2)}€ (${percentChange}%) desde ${lastPrice.toFixed(2)}€`, 'warning', 'price-alert-container');
                 } else if (difference < 0) {
@@ -1528,6 +1744,7 @@
                     showAlert(`➡️ Precio sin cambios: ${price.toFixed(2)}€`, 'info', 'price-alert-container');
                 }
             }
+
             data.prices.push({ product: productName, variant, supermarket, price, date });
             saveData();
             
@@ -1537,6 +1754,7 @@
             loadLastPrices();
             showAlert('✅ Precio registrado correctamente', 'success');
         }
+
         function loadLastPrices() {
             const productName = document.getElementById('price-product').value;
             const container = document.getElementById('last-prices-container');
@@ -1551,6 +1769,7 @@
                 variantSelector.style.display = 'none';
                 return;
             }
+
             const product = data.products.find(p => p.name === productName);
             
             // Mostrar selector de variantes si existen
@@ -1563,13 +1782,16 @@
             } else {
                 variantSelector.style.display = 'none';
             }
+
             const productPrices = data.prices
                 .filter(p => p.product === productName)
                 .sort((a, b) => new Date(b.date) - new Date(a.date));
+
             if (productPrices.length === 0) {
                 container.innerHTML = '<div class="empty-state"><p>No hay precios registrados para este producto</p></div>';
                 return;
             }
+
             // Agrupar por variante
             const pricesByVariant = {};
             productPrices.forEach(p => {
@@ -1577,12 +1799,14 @@
                 if (!pricesByVariant[key]) pricesByVariant[key] = [];
                 pricesByVariant[key].push(p);
             });
+
             let html = '<h3 style="margin-bottom: 15px;">Últimos Precios Registrados</h3>';
             
             Object.entries(pricesByVariant).forEach(([variantName, prices]) => {
                 if (variantName !== 'Sin variante') {
                     html += `<h4 style="margin-top: 20px; color: #667eea;">${variantName}</h4>`;
                 }
+
                 // Obtener último precio por supermercado
                 const latestPrices = {};
                 prices.forEach(p => {
@@ -1590,9 +1814,11 @@
                         latestPrices[p.supermarket] = p;
                     }
                 });
+
                 const priceList = Object.values(latestPrices);
                 const minPrice = Math.min(...priceList.map(p => p.price));
                 const maxPrice = Math.max(...priceList.map(p => p.price));
+
                 // Calcular precio por unidad si es variante
                 const variant = product && product.variants.find(v => v.format === variantName);
                 
@@ -1623,8 +1849,10 @@
                     `;
                 });
             });
+
             container.innerHTML = html;
         }
+
         // ESCÁNER DE CÓDIGOS
         async function startScanner() {
             try {
@@ -1632,6 +1860,7 @@
                 const container = document.getElementById('scanner-container');
                 const startBtn = document.getElementById('start-scanner-btn');
                 const stopBtn = document.getElementById('stop-scanner-btn');
+
                 scannerStream = await navigator.mediaDevices.getUserMedia({ 
                     video: { facingMode: 'environment' } 
                 });
@@ -1640,6 +1869,7 @@
                 container.style.display = 'block';
                 startBtn.style.display = 'none';
                 stopBtn.style.display = 'block';
+
                 scannerCodeReader = new ZXing.BrowserBarcodeReader();
                 
                 scannerCodeReader.decodeFromVideoDevice(null, 'scanner-video', (result, err) => {
@@ -1651,6 +1881,7 @@
                 showAlert('❌ Error al acceder a la cámara: ' + error.message, 'danger');
             }
         }
+
         function stopScanner() {
             if (scannerStream) {
                 scannerStream.getTracks().forEach(track => track.stop());
@@ -1661,10 +1892,12 @@
                 scannerCodeReader.reset();
                 scannerCodeReader = null;
             }
+
             document.getElementById('scanner-container').style.display = 'none';
             document.getElementById('start-scanner-btn').style.display = 'block';
             document.getElementById('stop-scanner-btn').style.display = 'none';
         }
+
         function handleBarcodeDetected(barcode) {
             stopScanner();
             
@@ -1689,6 +1922,7 @@
                 showBarcodeAssociationModal(barcode);
             }
         }
+
         function showBarcodeAssociationModal(barcode) {
             const modal = document.getElementById('barcode-modal');
             const content = document.getElementById('barcode-modal-content');
@@ -1718,6 +1952,7 @@
             content.innerHTML = html;
             modal.classList.add('active');
         }
+
         function updateBarcodeVariants() {
             const productName = document.getElementById('barcode-product-select').value;
             const variantSelector = document.getElementById('barcode-variant-selector');
@@ -1739,6 +1974,7 @@
                 variantSelector.style.display = 'none';
             }
         }
+
         function associateBarcode(barcode) {
             const productName = document.getElementById('barcode-product-select').value;
             const variantSelect = document.getElementById('barcode-variant-select');
@@ -1763,6 +1999,7 @@
                 document.getElementById('price-variant').value = variant;
             }
         }
+
         // LISTA DE COMPRA
         function updateShoppingVariants() {
             const productName = document.getElementById('shopping-product').value;
@@ -1785,15 +2022,18 @@
                 variantSelector.style.display = 'none';
             }
         }
+
         function addToShoppingList() {
             const productName = document.getElementById('shopping-product').value;
             const variantSelect = document.getElementById('shopping-variant');
             const variant = variantSelect.style.display === 'none' ? null : variantSelect.value;
             const quantity = parseInt(document.getElementById('shopping-quantity').value);
+
             if (!productName || !quantity || quantity <= 0) {
                 showAlert('⚠️ Por favor completa todos los campos', 'warning');
                 return;
             }
+
             const existing = data.shoppingList.find(item => 
                 item.product === productName && item.variant === variant
             );
@@ -1809,6 +2049,7 @@
             document.getElementById('shopping-quantity').value = 1;
             showAlert('✅ Añadido a la lista', 'success');
         }
+
         function updateShoppingList() {
             const container = document.getElementById('shopping-list-container');
             
@@ -1816,6 +2057,7 @@
                 container.innerHTML = '<div class="empty-state"><p>Tu lista está vacía</p></div>';
                 return;
             }
+
             let html = '<h3 style="margin-bottom: 15px;">Tu Lista</h3>';
             
             data.shoppingList.forEach((item, index) => {
@@ -1843,43 +2085,52 @@
                     </div>
                 `;
             });
+
             container.innerHTML = html;
         }
+
         function removeFromShoppingList(index) {
             data.shoppingList.splice(index, 1);
             saveData();
             updateShoppingList();
         }
+
         function updateQuantity(index, value) {
             data.shoppingList[index].quantity = parseInt(value);
             saveData();
         }
+
         function optimizeShoppingList() {
             if (data.shoppingList.length === 0) {
                 showAlert('⚠️ Tu lista está vacía', 'warning');
                 return;
             }
+
             const results = {
                 bySupermarket: {},
                 optimal: [],
                 totalBySupermarket: {},
                 totalSavings: 0
             };
+
             // Calcular precio total por supermercado
             data.supermarkets.forEach(supermarket => {
                 let total = 0;
                 let available = 0;
+
                 data.shoppingList.forEach(item => {
                     const prices = data.prices
                         .filter(p => p.product === item.product && 
                                     p.variant === item.variant && 
                                     p.supermarket === supermarket.name)
                         .sort((a, b) => new Date(b.date) - new Date(a.date));
+
                     if (prices.length > 0) {
                         total += prices[0].price * item.quantity;
                         available++;
                     }
                 });
+
                 if (available > 0) {
                     results.totalBySupermarket[supermarket.name] = {
                         total: total,
@@ -1888,16 +2139,19 @@
                     };
                 }
             });
+
             // Calcular compra óptima
             data.shoppingList.forEach(item => {
                 let bestPrice = null;
                 let bestSupermarket = null;
+
                 data.supermarkets.forEach(supermarket => {
                     const prices = data.prices
                         .filter(p => p.product === item.product && 
                                     p.variant === item.variant && 
                                     p.supermarket === supermarket.name)
                         .sort((a, b) => new Date(b.date) - new Date(a.date));
+
                     if (prices.length > 0) {
                         if (bestPrice === null || prices[0].price < bestPrice) {
                             bestPrice = prices[0].price;
@@ -1905,6 +2159,7 @@
                         }
                     }
                 });
+
                 if (bestSupermarket) {
                     const displayName = item.variant ? `${item.product} - ${item.variant}` : item.product;
                     results.optimal.push({
@@ -1916,6 +2171,7 @@
                     });
                 }
             });
+
             // Calcular ahorro
             const sortedSupermarkets = Object.entries(results.totalBySupermarket)
                 .sort((a, b) => a[1].total - b[1].total);
@@ -1925,16 +2181,20 @@
                 const optimalTotal = results.optimal.reduce((sum, item) => sum + item.total, 0);
                 results.totalSavings = singleStoreTotal - optimalTotal;
             }
+
             displayOptimizationResults(results);
         }
+
         function displayOptimizationResults(results) {
             const container = document.getElementById('optimization-results');
             
             let html = '<div class="optimization-result">';
             html += '<h3>💰 Resultados de Optimización</h3>';
+
             // Mejor supermercado para comprar todo
             const sortedSupermarkets = Object.entries(results.totalBySupermarket)
                 .sort((a, b) => a[1].total - b[1].total);
+
             if (sortedSupermarkets.length > 0) {
                 html += '<div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px; margin-bottom: 15px;">';
                 html += '<strong style="font-size: 18px;">🏆 Comprar Todo en un Solo Sitio:</strong><br>';
@@ -1949,9 +2209,11 @@
                 });
                 html += '</div>';
             }
+
             // Compra óptima
             if (results.optimal.length > 0) {
                 const optimalTotal = results.optimal.reduce((sum, item) => sum + item.total, 0);
+
                 html += '<div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px;">';
                 html += '<strong style="font-size: 18px;">🎯 Compra Óptima (Máximo Ahorro):</strong><br>';
                 html += `<div style="font-size: 24px; margin: 10px 0;"><strong>${optimalTotal.toFixed(2)}€</strong></div>`;
@@ -1959,6 +2221,7 @@
                 if (results.totalSavings > 0) {
                     html += `<div class="savings-badge">¡Ahorras ${results.totalSavings.toFixed(2)}€!</div>`;
                 }
+
                 html += '<div style="margin-top: 15px;">';
                 
                 // Agrupar por supermercado
@@ -1969,6 +2232,7 @@
                     }
                     bySupermarket[item.supermarket].push(item);
                 });
+
                 Object.entries(bySupermarket).forEach(([supermarket, items]) => {
                     const totalSuper = items.reduce((sum, item) => sum + item.total, 0);
                     html += `<div style="margin-top: 10px;"><strong>${supermarket}</strong> (${totalSuper.toFixed(2)}€):<br>`;
@@ -1977,27 +2241,33 @@
                     });
                     html += '</div>';
                 });
+
                 html += '</div></div>';
             }
+
             html += '</div>';
             container.innerHTML = html;
         }
+
         function shareShoppingList() {
             if (data.shoppingList.length === 0) {
                 showAlert('⚠️ Tu lista está vacía', 'warning');
                 return;
             }
+
             let text = '🛒 *Mi Lista de la Compra*\n\n';
             data.shoppingList.forEach(item => {
                 const displayName = item.variant ? `${item.product} - ${item.variant}` : item.product;
                 text += `• ${displayName} (x${item.quantity})\n`;
             });
+
             // Añadir optimización si está disponible
             const optimizationDiv = document.getElementById('optimization-results');
             if (optimizationDiv.innerHTML) {
                 text += '\n💰 *Consejo de Ahorro:*\n';
                 text += 'Usa la app para ver dónde comprar cada cosa más barato!';
             }
+
             const encodedText = encodeURIComponent(text);
             
             // Intentar compartir por WhatsApp
@@ -2005,8 +2275,10 @@
             const whatsappUrl = isMobile 
                 ? `whatsapp://send?text=${encodedText}`
                 : `https://web.whatsapp.com/send?text=${encodedText}`;
+
             window.open(whatsappUrl, '_blank');
         }
+
         // ESTADÍSTICAS
         function updateStatsProducts() {
             const select = document.getElementById('stats-product');
@@ -2015,6 +2287,7 @@
                 select.innerHTML += `<option value="${product.name}">${product.name}</option>`;
             });
         }
+
         function calculateTotalSavings() {
             const container = document.getElementById('total-savings');
             
@@ -2034,6 +2307,7 @@
                     potentialSavings += (maxPrice - minPrice);
                 }
             });
+
             let html = `
                 <div class="stat-card">
                     <div class="stat-value">${totalProducts}</div>
@@ -2055,21 +2329,26 @@
             
             container.innerHTML = html;
         }
+
         function showProductStats() {
             const productName = document.getElementById('stats-product').value;
             const container = document.getElementById('stats-content');
+
             if (!productName) {
                 container.innerHTML = '';
                 return;
             }
+
             const product = data.products.find(p => p.name === productName);
             const productPrices = data.prices
                 .filter(p => p.product === productName)
                 .sort((a, b) => new Date(a.date) - new Date(b.date));
+
             if (productPrices.length === 0) {
                 container.innerHTML = '<div class="empty-state"><p>No hay datos para este producto</p></div>';
                 return;
             }
+
             // Estadísticas por variante
             const statsByVariant = {};
             productPrices.forEach(p => {
@@ -2077,7 +2356,9 @@
                 if (!statsByVariant[key]) statsByVariant[key] = [];
                 statsByVariant[key].push(p);
             });
+
             let html = '';
+
             // Crear gráfico para cada variante
             Object.entries(statsByVariant).forEach(([variantName, prices], index) => {
                 const latestPrices = {};
@@ -2088,13 +2369,16 @@
                             latestPrices[p.supermarket] = p;
                         }
                     });
+
                 const priceValues = Object.values(latestPrices).map(p => p.price);
                 const minPrice = Math.min(...priceValues);
                 const maxPrice = Math.max(...priceValues);
                 const avgPrice = priceValues.reduce((a, b) => a + b, 0) / priceValues.length;
+
                 if (variantName !== 'Sin variante') {
                     html += `<h3 style="margin: 25px 0 15px 0; color: #667eea;">${variantName}</h3>`;
                 }
+
                 html += '<div class="stats-grid">';
                 html += `
                     <div class="stat-card">
@@ -2115,10 +2399,12 @@
                     </div>
                 `;
                 html += '</div>';
+
                 // Gráfico
                 html += '<div class="chart-container">';
                 html += `<canvas id="priceChart-${index}"></canvas>`;
                 html += '</div>';
+
                 // Tabla de precios actuales
                 html += '<h4 style="margin: 20px 0 10px 0;">Precios Actuales</h4>';
                 Object.values(latestPrices).forEach(p => {
@@ -2150,17 +2436,22 @@
                     `;
                 });
             });
+
             container.innerHTML = html;
+
             // Crear gráficos
             Object.entries(statsByVariant).forEach(([variantName, prices], index) => {
                 createPriceChart(productName, prices, `priceChart-${index}`);
             });
         }
+
         function createPriceChart(productName, prices, canvasId) {
             const ctx = document.getElementById(canvasId);
             if (!ctx) return;
+
             const datasets = [];
             const colors = ['#667eea', '#20bf6b', '#eb3b5a', '#f7b731', '#45aaf2'];
+
             data.supermarkets.forEach((supermarket, index) => {
                 const supermarketPrices = prices
                     .filter(p => p.supermarket === supermarket.name)
@@ -2168,6 +2459,7 @@
                         x: p.date,
                         y: p.price
                     }));
+
                 if (supermarketPrices.length > 0) {
                     datasets.push({
                         label: supermarket.name,
@@ -2179,6 +2471,7 @@
                     });
                 }
             });
+
             new Chart(ctx, {
                 type: 'line',
                 data: { datasets },
@@ -2236,16 +2529,19 @@
                 }
             });
         }
+
         // BÚSQUEDA Y FILTROS
         function filterProductSelect(searchId, selectId) {
             const searchTerm = document.getElementById(searchId).value.toLowerCase();
             const select = document.getElementById(selectId);
             const options = select.options;
+
             for (let i = 1; i < options.length; i++) {
                 const text = options[i].text.toLowerCase();
                 options[i].style.display = text.includes(searchTerm) ? '' : 'none';
             }
         }
+
         function filterProducts() {
             const searchTerm = document.getElementById('products-search').value.toLowerCase();
             const activeCategory = document.querySelector('.category-chip.active')?.textContent.replace('📦 ', '').trim();
@@ -2255,8 +2551,10 @@
                 const matchesCategory = !activeCategory || activeCategory === 'Todos' || product.category === activeCategory;
                 return matchesSearch && matchesCategory;
             });
+
             displayFilteredProducts(filteredProducts);
         }
+
         function updateCategoryFilter() {
             const container = document.getElementById('category-filter');
             const categories = ['Todos', ...new Set(data.products.map(p => p.category).filter(c => c))];
@@ -2270,6 +2568,7 @@
             
             container.innerHTML = html;
         }
+
         function filterByCategory(category) {
             document.querySelectorAll('.category-chip').forEach(chip => {
                 chip.classList.remove('active');
@@ -2279,6 +2578,7 @@
             });
             filterProducts();
         }
+
         function displayFilteredProducts(products) {
             const container = document.getElementById('products-list');
             
@@ -2286,6 +2586,7 @@
                 container.innerHTML = '<div class="empty-state"><p>No se encontraron productos</p></div>';
                 return;
             }
+
             let html = '';
             products.forEach(product => {
                 const priceCount = data.prices.filter(p => p.product === product.name).length;
@@ -2345,6 +2646,7 @@
             
             container.innerHTML = html;
         }
+
         // Actualizar todas las listas
         function updateAllLists() {
             // Actualizar selectores de productos
@@ -2358,6 +2660,7 @@
                 });
                 select.value = currentValue;
             });
+
             // Actualizar selector de supermercados
             const supermarketSelect = document.getElementById('price-supermarket');
             const currentSupermarket = supermarketSelect.value;
@@ -2366,8 +2669,10 @@
                 supermarketSelect.innerHTML += `<option value="${supermarket.name}">${supermarket.name}</option>`;
             });
             supermarketSelect.value = currentSupermarket;
+
             // Actualizar lista de productos
             filterProducts();
+
             // Actualizar lista de supermercados
             const supermarketsList = document.getElementById('supermarkets-list');
             if (data.supermarkets.length === 0) {
@@ -2400,8 +2705,10 @@
                 });
                 supermarketsList.innerHTML = html;
             }
+
             updateShoppingList();
         }
+
         // BACKUP Y CONFIGURACIÓN
         function exportData() {
             const dataStr = JSON.stringify(data, null, 2);
@@ -2421,6 +2728,7 @@
             
             showAlert('✅ Backup descargado correctamente', 'success');
         }
+
         function importData() {
             const fileInput = document.getElementById('import-file');
             const file = fileInput.files[0];
@@ -2429,9 +2737,11 @@
                 showAlert('⚠️ Por favor selecciona un archivo JSON', 'warning');
                 return;
             }
+
             if (!confirm('⚠️ Esto reemplazará todos tus datos actuales. ¿Estás seguro?')) {
                 return;
             }
+
             const reader = new FileReader();
             reader.onload = function(e) {
                 try {
@@ -2457,6 +2767,7 @@
             
             reader.readAsText(file);
         }
+
         function clearAllData() {
             if (!confirm('⚠️ ¿SEGURO que quieres borrar TODOS los datos? Esta acción no se puede deshacer.')) {
                 return;
@@ -2465,6 +2776,7 @@
             if (!confirm('⚠️ Última confirmación: Se borrarán todos los productos, supermercados, precios y listas. ¿Continuar?')) {
                 return;
             }
+
             data = {
                 products: [],
                 supermarkets: [],
@@ -2480,6 +2792,7 @@
             
             showAlert('✅ Todos los datos han sido borrados', 'success');
         }
+
         function updateDataInfo() {
             const container = document.getElementById('data-info');
             
@@ -2512,6 +2825,7 @@
             
             container.innerHTML = html;
         }
+
         // UTILIDADES
         function showAlert(message, type, containerId = null) {
             const alertDiv = document.createElement('div');
@@ -2532,9 +2846,11 @@
                 }, 5000);
             }
         }
+
         function closeModal(modalId) {
             document.getElementById(modalId).classList.remove('active');
         }
+
         // ============================================
         // PWA - INSTALACIÓN
         // ============================================
@@ -2551,11 +2867,13 @@
                 }
             }, 3000);
         });
+
         async function installApp() {
             if (!deferredPrompt) {
                 showAlert('⚠️ La app ya está instalada o tu navegador no soporta instalación', 'warning');
                 return;
             }
+
             deferredPrompt.prompt();
             const { outcome } = await deferredPrompt.userChoice;
             
@@ -2566,11 +2884,13 @@
             
             deferredPrompt = null;
         }
+
         function closeInstallPrompt() {
             const installPrompt = document.getElementById('install-prompt');
             installPrompt.classList.remove('show');
             localStorage.setItem('pwa-install-dismissed', 'true');
         }
+
         // Registrar Service Worker para PWA
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -2597,6 +2917,7 @@
                 });
             });
         }
+
         // ============================================
         // GOOGLE DRIVE SYNC
         // ============================================
@@ -2621,6 +2942,7 @@
                 actionsContainer.style.display = 'none';
             }
         }
+
         async function connectGoogleDrive() {
             showAlert('🔄 Conectando con Google Drive...', 'info');
             
@@ -2651,20 +2973,25 @@
                 showAlert('❌ Error al conectar con Google Drive: ' + error.message, 'danger');
             }
         }
+
         async function syncToGoogleDrive() {
             const token = localStorage.getItem('gdrive-token');
             if (!token) {
                 showAlert('⚠️ Por favor conecta primero con Google Drive', 'warning');
                 return;
             }
+
             showAlert('🔄 Subiendo datos a Drive...', 'info');
+
             try {
                 const fileContent = JSON.stringify(data, null, 2);
                 const fileMetadata = {
                     name: 'comparador-supermercados-datos.json',
                     mimeType: 'application/json'
                 };
+
                 let fileId = data.settings.gdriveFileId;
+
                 if (fileId) {
                     // Actualizar archivo existente
                     const response = await fetch(`https://www.googleapis.com/upload/drive/v3/files/${fileId}?uploadType=media`, {
@@ -2675,6 +3002,7 @@
                         },
                         body: fileContent
                     });
+
                     if (response.status === 401) {
                         // Token expirado
                         localStorage.removeItem('gdrive-token');
@@ -2684,6 +3012,7 @@
                         showAlert('⚠️ Sesión expirada. Por favor reconecta con Google Drive', 'warning');
                         return;
                     }
+
                     if (!response.ok) throw new Error('Error al actualizar archivo');
                     
                 } else {
@@ -2692,9 +3021,11 @@
                         name: 'comparador-supermercados-datos.json',
                         mimeType: 'application/json'
                     };
+
                     const form = new FormData();
                     form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
                     form.append('file', new Blob([fileContent], { type: 'application/json' }));
+
                     const response = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
                         method: 'POST',
                         headers: {
@@ -2702,6 +3033,7 @@
                         },
                         body: form
                     });
+
                     if (response.status === 401) {
                         localStorage.removeItem('gdrive-token');
                         data.settings.gdriveConnected = false;
@@ -2710,37 +3042,47 @@
                         showAlert('⚠️ Sesión expirada. Por favor reconecta con Google Drive', 'warning');
                         return;
                     }
+
                     if (!response.ok) throw new Error('Error al crear archivo');
+
                     const result = await response.json();
                     data.settings.gdriveFileId = result.id;
                     saveData();
                 }
+
                 showAlert('✅ Datos sincronizados con Drive correctamente', 'success');
+
             } catch (error) {
                 showAlert('❌ Error al sincronizar: ' + error.message, 'danger');
             }
         }
+
         async function syncFromGoogleDrive() {
             const token = localStorage.getItem('gdrive-token');
             if (!token) {
                 showAlert('⚠️ Por favor conecta primero con Google Drive', 'warning');
                 return;
             }
+
             const fileId = data.settings.gdriveFileId;
             if (!fileId) {
                 showAlert('⚠️ No hay archivo en Drive. Sube tus datos primero', 'warning');
                 return;
             }
+
             if (!confirm('⚠️ Esto reemplazará tus datos locales con los de Drive. ¿Continuar?')) {
                 return;
             }
+
             showAlert('🔄 Descargando datos de Drive...', 'info');
+
             try {
                 const response = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
                 });
+
                 if (response.status === 401) {
                     localStorage.removeItem('gdrive-token');
                     data.settings.gdriveConnected = false;
@@ -2749,7 +3091,9 @@
                     showAlert('⚠️ Sesión expirada. Por favor reconecta con Google Drive', 'warning');
                     return;
                 }
+
                 if (!response.ok) throw new Error('Error al descargar archivo');
+
                 const driveData = await response.json();
                 
                 // Mantener configuración de conexión
@@ -2761,10 +3105,12 @@
                 updateAllLists();
                 
                 showAlert('✅ Datos descargados de Drive correctamente', 'success');
+
             } catch (error) {
                 showAlert('❌ Error al descargar: ' + error.message, 'danger');
             }
         }
+
         function disconnectGoogleDrive() {
             if (confirm('¿Desconectar Google Drive? Tus datos locales no se borrarán.')) {
                 localStorage.removeItem('gdrive-token');
@@ -2775,8 +3121,10 @@
                 showAlert('✅ Desconectado de Google Drive', 'success');
             }
         }
+
         // Establecer fecha de hoy por defecto
         document.getElementById('price-date').valueAsDate = new Date();
+
         // Inicializar
         loadData();
     </script>
